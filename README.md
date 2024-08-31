@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./assets/logo.png" alt="Logotipo do Projeto" width="300" height="auto" />
+    <img src="./assets/logo.png" alt="Logotipo do Projeto" width="500" height="auto" />
 </div>
 
 # ProjetoAPI
