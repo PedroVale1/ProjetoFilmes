@@ -135,33 +135,58 @@ button.details-btn:hover {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #333; /* Fundo escuro para combinar com o tema da página */
+    color: white; /* Texto branco para contraste */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    max-width: 80%;
+    max-width: 70%;
     max-height: 80%;
     display: flex;
-    flex-direction: row; /* Layout em linha */
+    flex-direction: row; /* Layout em linha para imagem à esquerda e texto à direita */
     position: relative;
 }
 
 .modal-content img {
-    max-width: 40%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 40%; /* Ajuste da largura da imagem */
+    height: auto;
     border-radius: 10px;
-    margin-right: 20px; /* Espaçamento entre imagem e texto */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
 .modal-text {
-    max-width: 60%; /* Ajuste a largura conforme necessário */
+    max-width: 60%; /* Ajuste da largura da área de texto */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Centraliza o texto */
+    gap: 15px; /* Espaçamento entre os elementos de texto */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente para o texto */
+    border-radius: 5px;
 }
 
 .modal-text h2 {
     margin-top: 0;
+    font-size: 28px; /* Aumenta o tamanho do título */
+    font-weight: bold;
+    color: #ffcc00; /* Cor do texto chamativa */
+    text-align: center; /* Centraliza o título */
+    letter-spacing: 1px; /* Espaçamento entre as letras do título */
+}
+
+.modal-text p {
+    font-size: 18px; /* Tamanho do texto do corpo */
+    color: #e6e6e6;
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.5px; /* Espaçamento entre as letras do texto */
+}
+
+#modal-release-date {
+    font-size: 16px; /* Tamanho da data de lançamento */
+    color: #1e90ff; /* Azul que combina com o amarelo e o branco */
+    text-align: center; /* Centraliza a data de lançamento */
+    letter-spacing: 0.5px; /* Espaçamento entre as letras da data de lançamento */
 }
 
 .close-btn {
@@ -171,4 +196,10 @@ button.details-btn:hover {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff0000; /* Efeito de hover no botão de fechar */
 }
